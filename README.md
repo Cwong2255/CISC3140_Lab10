@@ -1,4 +1,4 @@
-# CISC3140_Lab10
+# CISC3140 Lab#10
 
 I decided to create a Tic Tac Toe game with a graphical user interface incorporating HTML, CSS, and Javascript for this Lab.
 The graphical user interface allows the players to reset the game by clicking on the reset button, which will change colors when hovered over.
