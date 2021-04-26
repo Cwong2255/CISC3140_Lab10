@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #545454;
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.container {
+  background: #14bdac;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 25px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title span {
+  color: #f2ebd3;
+}
+
+.status-action {
+  display: flex;
+  margin-top: 20px;
+  font-size: 25;
+  justify-content: space-around;
+  height: 30px;
+}
+
+.status {
+  font-weight: bold;
+  font-size: 17px;
+  position: relative;
+  left: -25px; /*Might remove this*/
+}
+
+.status span {
+  color: #f2ebd3;
+}
+
+.reset {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.reset:hover {
+  color: #f2ebd3;
+}
+
+.game-grid {
+  background: #0da192;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 20px;
+}
+
+.game-cell {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  height: 185px;
+  width: 200px;
+  background: #14bdac;
+}
+
+.x::before {
+  content: "×";
+  font-size: 200px;
+}
+
+.o::before {
+  content: "○";
+  color: #f2ebd3;
+  font-size: 200px;
+}
+
+.x,
+.o {
+  cursor: default;
+}
+
+#strikethrough {
+  display: none;
+  position: absolute;
+  height: 5px;
+}
+
+#strikethhrough div {
+  background-color: black;
+  height: 5px;
+  width: 0px;
+}
